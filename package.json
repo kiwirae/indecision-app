@@ -8,7 +8,8 @@
     "build": "webpack --mode production",
     "dev-server-babel": "babel src/index.js -o public/scripts/bundle.js --presets env,react --watch",
     "serve": "live-server public",
-    "start": "node server/server.js"
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "",
